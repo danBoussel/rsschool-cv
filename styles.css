@@ -50,3 +50,27 @@ img {
     background-size: contain;
     float: left;
 }
+
+@media all and (min-width:600px) {
+    /* box-left and box-right both share(devide) one line  */
+    .box {
+        flex: 1 auto;
+    }
+}
+
+@media all and (min-width:800px) {
+    /* keep columns for up to 800px/ summary box take 2x more width than left and right box*/
+    .summary {
+        flex: 2;
+        order: 2;
+    }
+    .left-box {
+        flex: 1;
+        order: 1;
+    }
+    .right-box {
+        flex: 1;
+        order: 3;
+    }
+}
+
