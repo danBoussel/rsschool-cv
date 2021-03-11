@@ -17,3 +17,22 @@
 **Professional Summary**
  - Recently, I decided to change my career and deep into the IT world for a better opportunity, more challenges, and career growth. Now, I'm on my way to reach my goal.  My first step was an intro to coding class to learn HTML, CSS, and JavaScript fundamentals with [Full Stuck Academy](https://www.fullstackacademy.com/bootcamp-prep).  I'm looking forward to obtaining a better understanding of programming concepts with [RS School](https://rs.school/index.html).
 
+ **Code Sample**
+  ```javascript
+  class TempTracker{
+  constructor(){
+    this.stack=[]
+  }
+  addData(...data){
+    this.stack.push(...data)
+  }
+average(){
+     const sum= this.stack.reduce((acc,el)=>{
+     return acc+=el
+  },0)
+return sum/this.stack.length
+}
+
+}
+const tempTracker = new TempTracker();
+```
