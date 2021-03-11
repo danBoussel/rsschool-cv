@@ -1,1 +1,52 @@
 
+.header {
+    background: dodgerblue;
+    font-size: 2rem;
+}
+
+.box-title {
+    font-family: Courier;
+    font-style: italic;
+    text-align: center;
+}
+
+.summary {
+    font-size: 1.5rem;
+    text-align: left;
+    background: rgb(78, 153, 179);
+}
+
+.left-box {
+    background: rgb(96, 129, 107);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-box {
+    background: rgba(105, 132, 156, 0.911);
+    font-size: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper>* {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+img {
+    background-image: url('funnyhtml.jpg');
+    height: 165px;
+    width: 130px;
+    margin: 10px;
+    background-position: center;
+    background-size: contain;
+    float: left;
+}
