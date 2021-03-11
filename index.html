@@ -56,3 +56,26 @@
             </ul>
         </div>
     </div>
+     <div>
+        <h2 class="box-title">Code Sample</h2>
+        <pre><code> <a href="https://github.com/danBoussel" style="text-decoration: none;">
+            class TempTracker{
+                constructor(){
+                  this.stack=[]
+                }
+                addData(...data){
+                  this.stack.push(...data)
+                }
+              average(){
+                   const sum= this.stack.reduce((acc,el)=>{
+                   return acc+=el
+                },0)
+              return sum/this.stack.length
+              }
+              }
+              const tempTracker = new TempTracker();
+       </a> </code></pre>
+    </div>
+</body>
+
+</html>
